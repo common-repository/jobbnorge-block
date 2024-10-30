@@ -1,0 +1,44 @@
+$break-medium: 782px;
+$grid-unit: 8px;
+$grid-unit-10: 1 * $grid-unit; // 8px
+
+@mixin break-medium() {
+	@media (min-width: #{ ($break-medium) }) {
+		@content;
+	}
+}
+
+.wp-block-dss-jobbnorge li a > div {
+	display: inline;
+}
+
+.wp-block-dss-jobbnorge__placeholder-form {
+	display: flex;
+	align-items: stretch;
+
+	> * {
+		margin-bottom: $grid-unit-10;
+	}
+
+	@include break-medium() {
+		> * {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+.wp-block-dss-jobbnorge__placeholder-input {
+	display: flex;
+	align-items: stretch;
+	flex-grow: 1;
+
+	.components-base-control__field {
+		margin: 0;
+		display: flex;
+		align-items: stretch;
+		flex-grow: 1;
+		margin-right: $grid-unit-10;
+	}
+}

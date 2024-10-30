@@ -1,0 +1,14 @@
+{
+	"name": "dss-web/jobbnorge-block",
+	"description": "WordPress Jobbnorge Block",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/dss-web/jobbnorge-block",
+	"authors": [
+		{
+			"name": "Per Søderlind",
+			"email": "per@soderlind.no"
+		}
+	],
+	"license": "GPL-2.0-or-later",
+	"require": {}
+}
